@@ -12,7 +12,7 @@ API Automation Framework with the CRUD of Restful Booker
 
 ## Tech Stack
 
-1. Java ( JDK > 17)
+1. Java ( JDK > 20)
 2. Rest Assured
 3. Apache POI, TestNG, Maven.
 4. AssertJ (Advance assertions)
