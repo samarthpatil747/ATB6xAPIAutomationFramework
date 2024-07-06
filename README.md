@@ -2,7 +2,7 @@
 
 #### Author - Samarth Patil
 
-API Automation Framework with the CRUD of Restful Booker
+API Automation Framework with the CRUD of Restful Booker API
 
 `mvn test -Dsurefire.suiteXmlFiles=testng.xml`
 
