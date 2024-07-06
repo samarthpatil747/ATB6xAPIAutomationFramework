@@ -1,6 +1,6 @@
 # API Automation RestAssured (in Java)
 
-#### Author - Samarth Patil
+#### Author - Samarth Patil Hi
 
 API Automation Framework with the CRUD of Restful Booker
 
