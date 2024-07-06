@@ -12,3 +12,5 @@ Q.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140
 temp,d/9/d969831eb8a99cff8c02e681f43289e5d3d69664
 \
 ,src/test/java/com/testingacademy/sample.java,d/3/d3d66476eb435b6f96646f051dcd3eae2b3cbbc9
+^
+.src/test/java/com/testingacademy/Sample_2.java,a/4/a463f8a6ebdf799e23d714151c122182171b155b
