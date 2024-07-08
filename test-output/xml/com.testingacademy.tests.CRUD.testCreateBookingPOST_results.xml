@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="/Users/alpha/IdeaProjects/ATB6xAPIAutomationFramework"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="3.582">
+  <properties />
+  
+  
+            <testcase name="testCreateBooking" time="2.136" classname="com.testingacademy.tests.CRUD.testCreateBookingPOST" />
+                <testcase name="testCreateBookingNegative" time="1.446" classname="com.testingacademy.tests.CRUD.testCreateBookingPOST" />
+      
+</testsuite>

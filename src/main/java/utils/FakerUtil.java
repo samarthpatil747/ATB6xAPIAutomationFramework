@@ -1,4 +1,4 @@
-package com.testingacademy.utils;
+package utils;
 
 import com.github.javafaker.Faker;
 
@@ -13,5 +13,9 @@ public class FakerUtil {
     public String getLastName() {
 
         return faker.name().lastName();
+    }
+
+    public Integer getRandomInt(){
+        return faker.random().nextInt(1000);
     }
 }
