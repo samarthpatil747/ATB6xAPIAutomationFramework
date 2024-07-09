@@ -11,9 +11,9 @@ public class PayloadManager {
     public String createPayloadBookingAsString() {
         Booking booking = new Booking();
         FakerUtil faker = new FakerUtil();
-      //  Faker faker = new Faker();
-        booking.setFirstname("Samarth");
-        booking.setLastname(faker.getLastName());
+        //  Faker faker = new Faker();
+        booking.setFirstname("Sameer");
+        booking.setLastname("Patil");
         booking.setTotalprice(faker.getRandomInt());
         booking.setDepositpaid(true);
 
@@ -30,6 +30,7 @@ public class PayloadManager {
     public String createInvalidPayloadBookingAsString() {
         return "{}";
     }
+
     public String fullUpdatePayloadAsString() {
         Booking booking = new Booking();
         booking.setFirstname("Sameer");
@@ -45,35 +46,43 @@ public class PayloadManager {
         return gson.toJson(booking);
     }
 
-    public BookingResponse bookingResponseJava(String responseString){
+    public BookingResponse bookingResponseJAVA(String responseString) {
         gson = new Gson();
-        BookingResponse bookingRespons = gson.fromJson(responseString,BookingResponse.class);
+        BookingResponse bookingRespons = gson.fromJson(responseString, BookingResponse.class);
         return bookingRespons;
     }
 
-    public String setAuthPayload(){
+    public String setAuthPayload() {
         Auth auth = new Auth();
         auth.setUsername("admin");
         auth.setPassword("password123");
         gson = new Gson();
         String jsonPayloadString = gson.toJson(auth);
-        System.out.println(" Payload set to "+ jsonPayloadString);
+        System.out.println(" Payload set to " + jsonPayloadString);
         return jsonPayloadString;
     }
 
-    public String getTokenFromJSON(String tokenResponse){
+    public String getTokenFromJSON(String tokenResponse) {
         gson = new Gson();
         // Response ( JSON) ->  Object TokenResponse
         // Deserialization
-        TokenResponse tokenResponse1 = gson.fromJson(tokenResponse,TokenResponse.class);
+        TokenResponse tokenResponse1 = gson.fromJson(tokenResponse, TokenResponse.class);
         return tokenResponse1.getToken();
     }
 
-    public Booking getResponseFromJSON(String getResponse){
+    public Booking getResponseFromJSON(String getResponse) {
         gson = new Gson();
         // Response ( JSON) ->  Object TokenResponse
         // Deserialization
-        Booking booking = gson.fromJson(getResponse,Booking.class);
+        Booking booking = gson.fromJson(getResponse, Booking.class);
+        return booking;
+    }
+
+    public Booking bookingResponseFromJSON(String getResponse) {
+        gson = new Gson();
+        // Response ( JSON) ->  Object TokenResponse
+        // Deserialization
+        Booking booking = gson.fromJson(getResponse, Booking.class);
         return booking;
     }
 }

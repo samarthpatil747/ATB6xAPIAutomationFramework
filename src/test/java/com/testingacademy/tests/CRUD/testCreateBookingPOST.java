@@ -30,7 +30,7 @@ public class testCreateBookingPOST extends BaseTest {
 //        validatableResponse.body("booking.firstname", Matchers.equalTo("Pramod"));
 
         // DeSer
-        BookingResponse bookingResponse = payloadManager.bookingResponseJava(response.asString());
+        BookingResponse bookingResponse = payloadManager.bookingResponseJAVA(response.asString());
         // AssertJ
         assertThat(bookingResponse.getBookingid ()).isNotNull();
         assertThat(bookingResponse.getBooking().getFirstname()).isNotNull().isNotBlank();

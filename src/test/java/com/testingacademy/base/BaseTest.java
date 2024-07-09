@@ -12,6 +12,8 @@ import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.BeforeTest;
 import com.testingacademy.endpoints.APIConstants;
 
+import static com.testingacademy.endpoints.APIConstants.Property_URL;
+
 public class BaseTest {
     public RequestSpecification requestSpecification;
     public AssertActions assertActions;
@@ -25,8 +27,9 @@ public class BaseTest {
         System.out.println("Before Test");
         payloadManager = new PayloadManager();
         assertActions = new AssertActions();
+        System.out.println(Property_URL);
         requestSpecification = new RequestSpecBuilder()
-                .setBaseUri(APIConstants.Base_URL)
+                .setBaseUri(Property_URL)
                 .addHeader("Content-Type","application/json")
                 .build().log().all();
 
