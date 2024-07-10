@@ -99,6 +99,7 @@
       <artifactId>extentreports</artifactId>
       <version>4.0.9</version>
     </dependency>
+    <!-- https://testng-->
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
